@@ -1,0 +1,122 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  font-size: var(--font-size-default);
+  line-height: 1.5;
+}
+
+:root {
+  --color-grey: rgb(207, 200, 200);
+  --color-blue: lightblue;
+  --color-red: red;
+
+  --margin-xs: 0.8rem;
+  --margin-s: 1.5rem;
+  --margin-m: 1.8rem;
+  --margin-l: 2.5rem;
+  --margin-xl: 3rem;
+
+  --padding-xs: 0.8rem;
+  --padding-s: 1.5rem;
+  --padding-m: 1.8rem;
+  --padding-l: 2.5rem;
+  --padding-xl: 3rem;
+
+  --font-size-default: 1.8rem;
+  --font-size-xs: 1.5rem;
+  --font-size-s: 2rem;
+  --font-size-m: 2.3rem;
+  --font-size-l: 2.6rem;
+  --font-size-xl: 2.9rem;
+}
+
+#main-doc {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  margin-bottom: var(--margin-s);
+}
+
+.navbar__header {
+  text-align: center;
+  padding: var(--padding-m);
+}
+
+.navbar__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0px;
+  border: 1px solid;
+}
+
+.navbar__nav-list > li {
+  margin-bottom: 10px;
+  padding: var(--padding-m);
+  border-bottom: 1px solid;
+}
+
+.nav-link {
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 700px) {
+  #main-doc {
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.docs__description {
+  margin-top: var(--margin-m);
+  /* border: 1px solid blue; */
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+header {
+  padding-top: var(--padding-m);
+  font-size: var(--font-size-xl);
+}
+
+.title__description {
+  padding-top: var(--padding-m);
+}
+
+.title__description > p {
+  margin-bottom: var(--margin-s);
+  padding-left: var(--padding-s);
+}
+
+.title__list {
+  padding-top: var(--padding-xs);
+}
+
+code {
+  font-size: var(--font-size-xs);
+}
+.title__code {
+  padding-left: var(--padding-l);
+  margin-left: var(--margin-l);
+  background-color: rgb(250, 242, 242);
+}
+
+#declaring-variables {
+  margin-bottom: var(--margin-m);
+}
